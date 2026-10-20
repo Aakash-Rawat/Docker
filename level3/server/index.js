@@ -10,7 +10,7 @@ const port = process.env.PORT || 5000;
 
 app.get('/',(req,res)=>{
    return res.status(200).json({
-    message: "hello from server"
+    message: `hello from ${process.env.SERVER_NAME}`
    })
 })
 
